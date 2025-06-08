@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C5F5A9A92DF641CB00B724F5 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5A9A62DF641CB00B724F5 /* CatBreed.swift */; };
+		C5F5A9AA2DF641CB00B724F5 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5A9A72DF641CB00B724F5 /* CatViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C5F5A94D2DF635EA00B724F5 /* CatFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F5A9A62DF641CB00B724F5 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
+		C5F5A9A72DF641CB00B724F5 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C5F5A9A52DF641B800B724F5 /* Exceptions for "CatFacts" folder in "CatFacts" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C5F5A94C2DF635EA00B724F5 /* CatFacts */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C5F5A94F2DF635EA00B724F5 /* CatFacts */ = {
+		C5F5A9A02DF641B800B724F5 /* CatFacts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C5F5A9A52DF641B800B724F5 /* Exceptions for "CatFacts" folder in "CatFacts" target */,
+			);
 			path = CatFacts;
 			sourceTree = "<group>";
 		};
@@ -32,7 +52,8 @@
 		C5F5A9442DF635EA00B724F5 = {
 			isa = PBXGroup;
 			children = (
-				C5F5A94F2DF635EA00B724F5 /* CatFacts */,
+				C5F5A9A02DF641B800B724F5 /* CatFacts */,
+				C5F5A9A82DF641CB00B724F5 /* Models */,
 				C5F5A94E2DF635EA00B724F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +64,15 @@
 				C5F5A94D2DF635EA00B724F5 /* CatFacts.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C5F5A9A82DF641CB00B724F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5F5A9A62DF641CB00B724F5 /* CatBreed.swift */,
+				C5F5A9A72DF641CB00B724F5 /* CatViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +91,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C5F5A94F2DF635EA00B724F5 /* CatFacts */,
+				C5F5A9A02DF641B800B724F5 /* CatFacts */,
 			);
 			name = CatFacts;
 			packageProductDependencies = (
@@ -119,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F5A9A92DF641CB00B724F5 /* CatBreed.swift in Sources */,
+				C5F5A9AA2DF641CB00B724F5 /* CatViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +288,9 @@
 				DEVELOPMENT_TEAM = 6LKT6XC2AH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +316,9 @@
 				DEVELOPMENT_TEAM = 6LKT6XC2AH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
