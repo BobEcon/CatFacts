@@ -44,13 +44,20 @@ class CatViewModel {
             Task { @MainActor in
                 self.total = returned.total
                 self.urlString = returned.next_page_url ?? ""
-                self.breeds = returned.data
+                self.breeds = self.breeds + returned.data
                 isLoading = false
             }
             
         } catch {
             print("😡 ERROR: Could not get data from \(urlString)")
             isLoading = false
+        }
+    }
+    
+    func loadNextIfNeeded(cat: CatBreed) async {
+        guard let lastCat = breeds.last else { return }
+        if cat.id == lastCat.id && urlString.hasPrefix("http") {
+            await getData()
         }
     }
     

@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C59C8B7D2DF78CCA0043DA42 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C8B7C2DF78CCA0043DA42 /* ImageURL.swift */; };
+		C59C8B9A2DF78F410043DA42 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C8B972DF78F410043DA42 /* DetailView.swift */; };
+		C59C8B9B2DF78F410043DA42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C8B982DF78F410043DA42 /* ListView.swift */; };
 		C5F5A9A92DF641CB00B724F5 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5A9A62DF641CB00B724F5 /* CatBreed.swift */; };
 		C5F5A9AA2DF641CB00B724F5 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5A9A72DF641CB00B724F5 /* CatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C59C8B7C2DF78CCA0043DA42 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
+		C59C8B972DF78F410043DA42 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C59C8B982DF78F410043DA42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		C5F5A94D2DF635EA00B724F5 /* CatFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F5A9A62DF641CB00B724F5 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
 		C5F5A9A72DF641CB00B724F5 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C5F5A9A52DF641B800B724F5 /* Exceptions for "CatFacts" folder in "CatFacts" target */ = {
+		C59C8B962DF78F2A0043DA42 /* Exceptions for "CatFacts" folder in "CatFacts" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -28,10 +34,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C5F5A9A02DF641B800B724F5 /* CatFacts */ = {
+		C59C8B912DF78F2A0043DA42 /* CatFacts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				C5F5A9A52DF641B800B724F5 /* Exceptions for "CatFacts" folder in "CatFacts" target */,
+				C59C8B962DF78F2A0043DA42 /* Exceptions for "CatFacts" folder in "CatFacts" target */,
 			);
 			path = CatFacts;
 			sourceTree = "<group>";
@@ -49,10 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C59C8B992DF78F410043DA42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C59C8B972DF78F410043DA42 /* DetailView.swift */,
+				C59C8B982DF78F410043DA42 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C5F5A9442DF635EA00B724F5 = {
 			isa = PBXGroup;
 			children = (
-				C5F5A9A02DF641B800B724F5 /* CatFacts */,
+				C59C8B912DF78F2A0043DA42 /* CatFacts */,
 				C5F5A9A82DF641CB00B724F5 /* Models */,
 				C5F5A94E2DF635EA00B724F5 /* Products */,
 			);
@@ -69,8 +84,10 @@
 		C5F5A9A82DF641CB00B724F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C59C8B7C2DF78CCA0043DA42 /* ImageURL.swift */,
 				C5F5A9A62DF641CB00B724F5 /* CatBreed.swift */,
 				C5F5A9A72DF641CB00B724F5 /* CatViewModel.swift */,
+				C59C8B992DF78F410043DA42 /* Views */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C5F5A9A02DF641B800B724F5 /* CatFacts */,
+				C59C8B912DF78F2A0043DA42 /* CatFacts */,
 			);
 			name = CatFacts;
 			packageProductDependencies = (
@@ -149,7 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59C8B9A2DF78F410043DA42 /* DetailView.swift in Sources */,
+				C59C8B9B2DF78F410043DA42 /* ListView.swift in Sources */,
 				C5F5A9A92DF641CB00B724F5 /* CatBreed.swift in Sources */,
+				C59C8B7D2DF78CCA0043DA42 /* ImageURL.swift in Sources */,
 				C5F5A9AA2DF641CB00B724F5 /* CatViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
