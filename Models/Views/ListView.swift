@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     @State var catVM = CatViewModel()
+    @State private var sheetIsPresented = false
     
     var body: some View {
         NavigationStack {
@@ -28,9 +29,33 @@ struct ListView: View {
                 }
                 .listStyle(.plain)
                 .navigationTitle(Text("Cat Breeds:"))
+                .sheet(isPresented: $sheetIsPresented) {
+                    NavigationStack {
+                        FactView()
+                    }
+                }
                 .toolbar {
                     ToolbarItem(placement: .status) {
                         Text("\(catVM.breeds.count) of \(catVM.total) breeds")
+                    }
+                    ToolbarItem(placement: .bottomBar) {
+                        Button {
+                            Task {
+                                await catVM.loadAll()
+                            }
+                        } label: {
+                            Text("Load All")
+                        }
+                        
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            sheetIsPresented.toggle()
+                        } label: {
+                            Text("🐈‍⬛")
+                            Image(systemName: "lightbulb.fill")
+                        }
+                        .buttonStyle(.bordered)
                     }
                 }
                 if catVM.isLoading {
